@@ -77,8 +77,8 @@ else:
 TEMP = ncid.variables[VAR]
 
 ncid2 = Dataset(input_file2, 'r')
-TEMP2 = ncid.variables[VAR] 
-TIME2 = ncid.variables['time'] 
+TEMP2 = ncid2.variables[VAR] 
+TIME2 = ncid2.variables['time'] 
 
 #TODO:TEMP(abs(TEMP(:))<1e-6) = NaN
 #TODO:TEMP2(abs(TEMP2(:))<1e-6) = NaN
